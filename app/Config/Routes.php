@@ -33,6 +33,7 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Home::index');
 
 $routes->get('contacts', 'Contact::index');
+$routes->get('contacts/(:segment)', 'Contact::show/$1');
 
 /**
  * --------------------------------------------------------------------
